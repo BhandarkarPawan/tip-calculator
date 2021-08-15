@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Space_Mono;
+  src: url('Space_Mono.otf');
+}
+
+html {
+  font-family: Space Mono;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(183, 100%, 15%);
+}
+
+@variants active {
+  .bg-light {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+}
+
+.btn {
+  @apply bg-darkestCyan text-white text-center rounded text-lg p-1 font-bold;
+  @apply active:bg-light;
+}
+
+.ringed-input {
+  @apply relative bg-lightGrayCyan2 rounded text-right;
+  @apply focus-within:outline-none;
+  @apply focus-within:ring-2;
+  @apply focus-within:ring-strongCyan;
+  @apply focus-within:border-transparent;
+}
+
+.ringed-input-inner {
+  @apply px-4 font-bold rounded text-right bg-lightGrayCyan2 text-darkestCyan;
+  @apply focus:outline-none;
+}
+
+.input-label {
+  @apply block text-sm mb-2 font-bold text-darkGrayCyan2;
+}
