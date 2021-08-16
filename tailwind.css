@@ -26,11 +26,6 @@ html {
   }
 }
 
-.btn {
-  @apply bg-darkestCyan text-white text-center rounded text-lg p-1 font-bold;
-  @apply active:bg-light;
-}
-
 .ringed-input {
   @apply relative bg-lightGrayCyan2 rounded text-right;
   @apply focus-within:outline-none;
@@ -46,4 +41,14 @@ html {
 
 .input-label {
   @apply block text-sm mb-2 font-bold text-darkGrayCyan2;
+}
+
+input[name='tip'] {
+  display: none;
+}
+input[name='tip'] + label {
+  @apply bg-darkestCyan text-white text-center rounded text-lg p-1 font-bold;
+}
+input[name='tip']:checked + label {
+  @apply bg-light text-white text-center rounded text-lg p-1 font-bold;
 }
