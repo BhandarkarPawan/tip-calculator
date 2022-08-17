@@ -1,4 +1,7 @@
 # Frontend Mentor - Tip calculator app
+
+This is a solution to the [Tip Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculate-using-html-and-tailwind-0ASVaEbYE). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
  
 ## Author
 
